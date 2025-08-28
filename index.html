@@ -4,13 +4,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>GreatFrontEnd Projects</title>
+    <title>Navbar Component</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
@@ -24,13 +25,13 @@
     </style>
   </head>
   <body class="bg-gradient-to-b from-[#F9FAFB] to-[#D2D6DB]">
-     <header class="flex justify-between items-center mt-4 mx-28">
+     <header class="flex justify-between items-center mt-[34px] mx-8 md:mt-4 md:mx-28">
       <!--Brand Logo -->
-      <div class="-mr-40">
-        <img src="./img/abstractly.svg" alt="">
+      <div class="md:-mr-40">
+        <img src="./img/abstractly.svg" alt="logo">
       </div>
       <!-- Nav links -->
-      <nav class="flex items-center]">
+      <nav class="md:flex items-center hidden">
         <ul class="flex font-medium text-base text-neutral-600 gap-8 items-center">
           <li><a href="#">Home</a></li>
           <li><a href="#">Features</a></li>
@@ -40,9 +41,15 @@
         </ul>
       </nav>
       <!-- Action button -->
-      <div class="flex gap-4">
+      <div class="md:flex hidden gap-4">
         <button class="bg-white px-4 py-2.5 rounded border-[0.5px] border-solid border-neutral-200 drop-shadow font-medium text-base text-neutral-900">Learn more</button>
         <button class="bg-indigo-700 px-4 py-2.5 rounded drop-shadow font-medium text-base text-white">See Pricing</button>
+      </div>
+      <!-- Hamburger menu -->
+      <div class="md:hidden">
+        <button class="rounded px-1 focus:ring-4 focus:ring-indigo-200 transition-shadow">
+          <i class="ri-menu-line text-neutral-600 hover:text-neutral-950 text-[20px]"></i>
+        </button>
       </div>
      </header>
 
