@@ -25,13 +25,14 @@
     </style>
   </head>
   <body class="bg-gradient-to-b from-[#F9FAFB] to-[#D2D6DB]">
-     <header class="flex justify-between items-center mt-[34px] mx-8 md:mt-4 md:mx-28">
+     <header class="max-w-[1280px] flex justify-between items-center mt-[34px] mx-8 md:mt-4 md:mx-28">
       <!--Brand Logo -->
-      <div class="md:-mr-40">
+      <div class="lg:-mr-40">
+        <!-- md:-mr-40 -->
         <img src="./img/abstractly.svg" alt="logo">
       </div>
       <!-- Nav links -->
-      <nav class="md:flex items-center hidden">
+      <nav class="max-md:hidden flex items-center">
         <ul class="flex font-medium text-base text-neutral-600 gap-8 items-center">
           <li><a href="#">Home</a></li>
           <li><a href="#">Features</a></li>
@@ -41,7 +42,7 @@
         </ul>
       </nav>
       <!-- Action button -->
-      <div class="md:flex hidden gap-4">
+      <div class="flex gap-4 max-md:hidden">
         <button class="bg-white px-4 py-2.5 rounded border-[0.5px] border-solid border-neutral-200 drop-shadow font-medium text-base text-neutral-900">Learn more</button>
         <button class="bg-indigo-700 px-4 py-2.5 rounded drop-shadow font-medium text-base text-white">See Pricing</button>
       </div>
