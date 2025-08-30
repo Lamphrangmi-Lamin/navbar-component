@@ -1,73 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- [Delete this comment] This file is the main file for the challenge. For the most part, you should be editing this file. -->
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Navbar Component</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
+<!-- [Delete this comment] This file is the main file for the challenge. For the most part, you should be editing this file. -->
 
-    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Navbar Component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
       If you're not using Tailwind, you may delete the <script> -->
-    <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="icon" href="img/favicon.ico" sizes="any" />
-    <style>
-      /* You may write styles inside this <style> tag or within `css/style.css`. */
-    </style>
-  </head>
-  <body class="bg-gradient-to-b from-[#F9FAFB] to-[#D2D6DB]">
-     <header class="max-w-[1280px] flex justify-between items-center mt-[34px] lg:mt-7 lg:mx-28 md:mx-8 mx-4 my-0">
-      <!--Brand Logo -->
-      <div class="lg:-mr-40">
-        <!-- md:-mr-40 -->
-        <img src="./img/abstractly.svg" alt="logo">
-      </div>
-      <!-- Nav links -->
-      <nav class="max-lg:hidden flex items-center">
-        <ul class="flex font-medium text-base text-neutral-600 gap-8 items-center">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <!-- Action button -->
-      <div class="flex gap-4 max-lg:hidden">
-        <button class="bg-white px-4 py-2.5 rounded border-[0.5px] border-solid border-neutral-200 drop-shadow font-medium text-base text-neutral-900">Learn more</button>
-        <button class="bg-indigo-700 px-4 py-2.5 rounded drop-shadow font-medium text-base text-white">See Pricing</button>
-      </div>
-      <!-- Hamburger menu -->
-      <div class="lg:hidden">
-        <button class="rounded px-1 focus:ring-4 focus:ring-indigo-200 transition-shadow">
-          <i class="ri-menu-line text-neutral-600 hover:text-neutral-950 text-[20px]"></i>
-        </button>
-      </div>
-     </header>
+  <link rel="icon" href="img/favicon.ico" sizes="any" />
+  <style>
+    /* You may write styles inside this <style> tag or within `css/style.css`. */
+  </style>
+</head>
 
-    <!-- Attribute this challenge to yourself! -->
-    <div class="credits" data-gfe-screenshot-exclude="true">
-      A challenge by
-      <a
-        href="https://www.greatfrontend.com/projects?ref=challenges"
-        target="_blank"
-        >GreatFrontEnd Projects</a
-      >. Built by
-      <a
-        href="https://www.greatfrontend.com/projects/u/username"
-        target="_blank"
-        >Lamphrangmi Lamin</a
-      >.
+<body class="bg-gradient-to-b from-[#F9FAFB] to-[#D2D6DB]">
+  <header
+    class="max-w-[1280px] flex justify-between items-center mt-[34px] lg:mt-7 lg:mx-28 md:mx-8 mx-4 my-0 max-lg:hidden">
+    <!--Brand Logo -->
+    <div class="lg:-mr-40">
+      <!-- md:-mr-40 -->
+      <img src="./img/abstractly.svg" alt="logo">
     </div>
-    <script src="js/index.js"></script>
-  </body>
+    <!-- Nav links -->
+    <nav class="max-lg:hidden flex items-center">
+      <ul class="flex font-medium text-base text-neutral-600 gap-8 items-center">
+        <li class="hover:text-neutral-900"><a aria-disabled="false" href="#"
+          class="focus:ring-4 focus:ring-gray-400  rounded px-0.5 aria-disabled:text-neutral-400 aria-disabled:ring-0" >Home</a></li>
+        <li class="hover:text-neutral-900"><a aria-disabled="false" href="#"
+          class="focus:ring-4 focus:ring-gray-400  rounded px-0.5 aria-disabled:text-neutral-400 aria-disabled:ring-0">Features</a></li>
+        <li class="hover:text-neutral-900"><a aria-disabled="false" href="#"
+          class="focus:ring-4 focus:ring-gray-400  rounded px-0.5 aria-disabled:text-neutral-400 aria-disabled:ring-0">Pricing</a></li>
+        <li class="hover:text-neutral-900"><a aria-disabled="false" href="#"
+          class="focus:ring-4 focus:ring-gray-400  rounded px-0.5 aria-disabled:text-neutral-400 aria-disabled:ring-0">About us</a></li>
+        <li class="hover:text-neutral-900"><a aria-disabled="false" href="#"
+          class="focus:ring-4 focus:ring-gray-400  rounded px-0.5 aria-disabled:text-neutral-400 aria-disabled:ring-0">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Action button -->
+    <div class="flex gap-4 max-lg:hidden">
+      <button
+        class="bg-white px-4 py-2.5 rounded border-[0.5px] border-solid border-neutral-200 drop-shadow font-medium text-base text-neutral-900
+        hover:bg-neutral-50 hover:text-neutral-950 focus:ring-4 focus:ring-gray-400
+            disabled:text-neutral-400 disabled:bg-neutral-100">Learn
+        more</button>
+      <button class="bg-indigo-700 px-4 py-2.5 rounded drop-shadow font-medium text-base text-white
+      hover:bg-indigo-800 focus:ring-4  focus:ring-indigo-200 disabled:text-neutral-400 disabled:bg-neutral-100">See
+        Pricing</button>
+    </div>
+    <!-- Hamburger menu -->
+    <div class="lg:hidden">
+      <button class="rounded px-1 focus:ring-4 focus:ring-indigo-200 transition-shadow">
+        <i class="ri-menu-line text-neutral-600 hover:text-neutral-950 text-[20px]"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Side menu -->
+  <nav class="bg-white px-4 pt-8 h-screen">
+    <!-- logo -->
+    <div class="flex justify-between">
+      <div>
+        <img src="./img/abstractly.svg" alt="brand logo">
+      </div>
+      <!-- Close icon -->
+      <button
+        class="focus:ring-4 focus:ring-indigo-200 rounded px-1 disabled:text-neutral-400 text-neutral-600 hover:text-neutral-950">
+        <i class="ri-close-fill text-[20px] text-inherit"></i>
+      </button>
+    </div>
+    <!-- nav links -->
+    <ul class="text-sm text-neutral-600 font-medium flex flex-col gap-2 pl-3 mt-6">
+      <li class="py-2 hover:text-neutral-900"><a aria-disabled="false" href="#"
+          class="focus:ring-4 focus:ring-gray-400  rounded px-0.5 aria-disabled:text-neutral-400 aria-disabled:ring-0">Home</a></li>
+      <li class="py-2 hover:text-neutral-900"><a aria-disabled="false"
+          class="focus:ring-4 focus:ring-gray-400 rounded px-0.5 aria-disabled:text-neutral-400 aria-disabled:ring-0" href="#">Features</a>
+      </li>
+      <li class="py-2 hover:text-neutral-900"><a aria-disabled="false"
+          class="focus:ring-4 focus:ring-gray-400 rounded px-0.5 aria-disabled:text-neutral-400 aria-disabled:ring-0" href="#">Pricing</a>
+      </li>
+      <li class="py-2 hover:text-neutral-900"><a aria-disabled="false"
+          class="focus:ring-4 focus:ring-gray-400 rounded px-0.5 aria-disabled:text-neutral-400 aria-disabled:ring-0" href="#">About us</a>
+      </li>
+      <li class="py-2 hover:text-neutral-900"><a aria-disabled="false"
+          class="focus:ring-4 focus:ring-gray-400 rounded px-0.5 aria-disabled:text-neutral-400 aria-disabled:ring-0" href="#">Contact</a>
+      </li>
+    </ul>
+    <!-- Action buttons -->
+    <div class="flex flex-col gap-4 absolute bottom-4 right-4 left-4">
+      <button class="border-[0.5px] border-solid border-neutral-200 rounded drop-shadow py-[10px]
+            hover:bg-neutral-50 text-neutral-900 hover:text-neutral-950 focus:ring-4 focus:ring-gray-400
+            disabled:text-neutral-400 disabled:bg-neutral-100">Learn more</button>
+      <button
+        class="bg-indigo-700 text-white py-[10px] rounded drop-shadow
+            hover:bg-indigo-800 focus:ring-4  focus:ring-indigo-200 disabled:text-neutral-400 disabled:bg-neutral-100">Try it
+        out</button>
+    </div>
+  </nav>
+
+  <!-- Attribute this challenge to yourself! -->
+  <div class="credits max-lg:hidden" data-gfe-screenshot-exclude="true">
+    A challenge by
+    <a href="https://www.greatfrontend.com/projects?ref=challenges" target="_blank">GreatFrontEnd Projects</a>. Built by
+    <a href="https://www.greatfrontend.com/projects/u/username" target="_blank">Lamphrangmi Lamin</a>.
+  </div>
+  <script src="js/index.js"></script>
+</body>
+
 </html>
